@@ -20,12 +20,17 @@ a{
 
 .hero{
     min-height:100vh;
-    background:
-        linear-gradient(rgba(0,0,0,.05), rgba(0,0,0,.15)),
-        url('photo-main.png');
+    background:url('photo-main.png');
     background-size:cover;
-    background-position:center;
+    background-position:center top;
     position:relative;
+}
+
+.hero::before{
+    content:'';
+    position:absolute;
+    inset:0;
+    backdrop-filter:brightness(1.15);
 }
 
 nav{

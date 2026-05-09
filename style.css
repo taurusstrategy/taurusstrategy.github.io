@@ -21,11 +21,20 @@ a{
 .hero{
     min-height:100vh;
     background:
-        linear-gradient(rgba(0,0,0,.05), rgba(0,0,0,.15)),
+        linear-gradient(
+            to right,
+            rgba(0,0,0,0.55) 0%,
+            rgba(0,0,0,0.35) 28%,
+            rgba(0,0,0,0.12) 55%,
+            rgba(0,0,0,0.02) 100%
+        ),
         url('photo-main.png');
+
     background-size:cover;
-    background-position:center;
+    background-position:center top;
     position:relative;
+
+    backdrop-filter: blur(1px);
 }
 
 nav{
@@ -42,6 +51,11 @@ nav{
     letter-spacing:10px;
     color:#e7c5cf;
     font-family:'Cormorant Garamond', serif;
+
+    text-shadow:
+        0 0 8px rgba(231,197,207,0.25),
+        0 0 18px rgba(231,197,207,0.18);
+
 }
 
 .menu{

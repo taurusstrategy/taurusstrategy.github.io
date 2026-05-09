@@ -21,7 +21,7 @@ a{
 .hero{
     min-height:100vh;
     background:
-        linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.65)),
+        linear-gradient(rgba(0,0,0,.05), rgba(0,0,0,.15)),
         url('photo-main.png');
     background-size:cover;
     background-position:center;

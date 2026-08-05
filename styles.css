@@ -1396,3 +1396,435 @@ input {
     background:rgba(255,255,255,.02);
 
 }
+
+/* =========================================
+   CONTACT PAGE
+========================================= */
+
+.contact-page {
+  background:
+    radial-gradient(
+      circle at 70% 12%,
+      rgba(20, 55, 96, 0.25),
+      transparent 32%
+    ),
+    linear-gradient(
+      180deg,
+      #06172f 0%,
+      #041225 46%,
+      #020c18 100%
+    );
+}
+
+.page-header {
+  position: relative;
+  background: rgba(2, 12, 24, 0.86);
+  border-bottom: 1px solid var(--line-soft);
+}
+
+
+/* =========================================
+   CONTACT HERO
+========================================= */
+
+.contact-hero {
+  min-height: 430px;
+  padding: 7rem 6vw 5rem;
+
+  display: flex;
+  align-items: center;
+
+  background:
+    radial-gradient(
+      circle at 80% 30%,
+      rgba(201, 148, 59, 0.1),
+      transparent 28%
+    ),
+    linear-gradient(
+      115deg,
+      #071a35,
+      #030e1d
+    );
+
+  border-bottom: 1px solid var(--line);
+}
+
+.contact-hero-copy {
+  width: 100%;
+  max-width: 1450px;
+  margin: 0 auto;
+}
+
+.contact-hero h1 {
+  max-width: 820px;
+  margin: 0.8rem 0 1rem;
+
+  font-size: clamp(3.5rem, 7vw, 7rem);
+  line-height: 0.94;
+}
+
+.contact-hero h1 em {
+  display: block;
+}
+
+.contact-hero-lead {
+  max-width: 690px;
+  margin: 0;
+
+  color: #b5c0cc;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+
+/* =========================================
+   CONTACT SECTION
+========================================= */
+
+.contact-section {
+  padding: 7rem 6vw;
+  background: #06162a;
+  border-bottom: 1px solid var(--line);
+}
+
+.contact-layout {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns:
+    minmax(0, 0.85fr)
+    minmax(420px, 1.15fr);
+
+  gap: clamp(4rem, 8vw, 8rem);
+  align-items: start;
+}
+
+
+/* =========================================
+   CONTACT INTRO
+========================================= */
+
+.contact-intro h2 {
+  margin: 0.8rem 0 1.5rem;
+
+  font-size: clamp(2.8rem, 4.5vw, 4.8rem);
+  line-height: 1;
+}
+
+.contact-intro > p {
+  max-width: 540px;
+
+  color: #b7c1cd;
+  font-size: 0.95rem;
+  line-height: 1.75;
+}
+
+.contact-option {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 1.2rem;
+
+  margin-top: 2rem;
+  padding-top: 2rem;
+
+  border-top: 1px solid var(--line-soft);
+}
+
+.contact-option-number {
+  color: var(--gold);
+  font-family: var(--serif);
+  font-size: 1.25rem;
+}
+
+.contact-option h3 {
+  margin: 0 0 0.35rem;
+
+  font-family: var(--sans);
+  font-size: 0.74rem;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.contact-option p {
+  max-width: 430px;
+  margin: 0;
+
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.65;
+}
+
+
+/* =========================================
+   DISCOVERY BOX
+========================================= */
+
+.contact-discovery {
+  margin-top: 3rem;
+  padding: 2rem;
+
+  border: 1px solid var(--line);
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(11, 35, 67, 0.75),
+      rgba(3, 14, 29, 0.8)
+    );
+}
+
+.contact-discovery-label {
+  margin: 0 0 0.7rem;
+
+  color: var(--gold);
+  font-size: 0.64rem;
+  font-weight: 600;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+}
+
+.contact-discovery h3 {
+  max-width: 430px;
+  margin-bottom: 1.4rem;
+
+  font-size: 1.8rem;
+  line-height: 1.1;
+}
+
+
+/* =========================================
+   CONTACT FORM
+========================================= */
+
+.contact-form-wrapper {
+  padding: clamp(2rem, 4vw, 3.5rem);
+
+  border: 1px solid var(--line);
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(10, 31, 57, 0.94),
+      rgba(4, 17, 33, 0.94)
+    );
+
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.form-field label {
+  color: var(--ivory);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.form-field label span {
+  color: var(--gold);
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  width: 100%;
+
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 0;
+
+  background: rgba(2, 12, 24, 0.65);
+  color: var(--silver);
+
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  font-weight: 300;
+
+  outline: none;
+
+  transition:
+    border-color 0.25s ease,
+    background 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.form-field input,
+.form-field select {
+  min-height: 54px;
+  padding: 0 1rem;
+}
+
+.form-field textarea {
+  min-height: 190px;
+  padding: 1rem;
+  resize: vertical;
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+  color: rgba(143, 155, 171, 0.65);
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  border-color: var(--gold);
+
+  background: rgba(2, 12, 24, 0.9);
+
+  box-shadow:
+    0 0 0 3px rgba(201, 148, 59, 0.08);
+}
+
+.select-wrapper {
+  position: relative;
+}
+
+.select-wrapper::after {
+  content: "⌄";
+
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+
+  color: var(--gold);
+
+  transform: translateY(-55%);
+  pointer-events: none;
+}
+
+.form-field select {
+  appearance: none;
+  cursor: pointer;
+}
+
+.form-field select option {
+  background: var(--navy-950);
+  color: var(--silver);
+}
+
+
+/* =========================================
+   CONSENT
+========================================= */
+
+.form-consent {
+  display: grid;
+  grid-template-columns: 18px 1fr;
+  gap: 0.8rem;
+  align-items: start;
+}
+
+.form-consent input {
+  width: 17px;
+  height: 17px;
+  margin: 0.2rem 0 0;
+
+  accent-color: var(--gold);
+}
+
+.form-consent label {
+  color: var(--muted);
+  font-size: 0.72rem;
+  line-height: 1.65;
+}
+
+.form-consent a {
+  color: var(--gold-soft);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+
+/* =========================================
+   SUBMIT
+========================================= */
+
+.contact-submit {
+  justify-content: center;
+
+  width: 100%;
+  margin-top: 0.5rem;
+
+  border: 1px solid var(--gold);
+  background: var(--gold);
+  color: var(--navy-950);
+
+  cursor: pointer;
+}
+
+.contact-submit:hover {
+  background: var(--gold-soft);
+  border-color: var(--gold-soft);
+}
+
+.form-note {
+  margin: 0;
+
+  color: rgba(143, 155, 171, 0.7);
+  font-size: 0.7rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+
+/* =========================================
+   CONTACT RESPONSIVE
+========================================= */
+
+@media (max-width: 1000px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-intro {
+    max-width: 700px;
+  }
+
+  .contact-form-wrapper {
+    max-width: 760px;
+  }
+}
+
+@media (max-width: 650px) {
+  .contact-hero {
+    min-height: 380px;
+    padding:
+      5.5rem
+      6vw
+      4rem;
+  }
+
+  .contact-hero h1 {
+    font-size: clamp(3.3rem, 16vw, 5rem);
+  }
+
+  .contact-section {
+    padding: 5rem 6vw;
+  }
+
+  .contact-layout {
+    gap: 3.5rem;
+  }
+
+  .contact-form-wrapper {
+    padding: 1.5rem;
+  }
+
+  .contact-discovery {
+    padding: 1.5rem;
+  }
+}

@@ -2404,3 +2404,378 @@ input {
     min-width: 0;
   }
 }
+
+/* ==================================================
+   INSIGHTS — PREMIUM COVERS
+   Add at the very end of styles.css
+================================================== */
+
+.insights .section-title {
+  width: 100%;
+  max-width: 1450px;
+  margin: 0 auto 1.4rem;
+
+  font-size: clamp(2.8rem, 4vw, 4.8rem);
+  line-height: 1;
+}
+
+.insights .section-intro {
+  width: 100%;
+  max-width: 1450px;
+  margin: 0 auto 2.8rem;
+
+  color: #b6c0cd;
+  font-size: 0.95rem;
+  line-height: 1.75;
+}
+
+
+/* CARD */
+
+.insight-card {
+  min-width: 0;
+  padding-bottom: 0;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  border: 1px solid var(--line);
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(8, 28, 56, 0.96),
+      rgba(4, 17, 33, 0.98)
+    );
+
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.insight-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(228, 185, 108, 0.58);
+
+  box-shadow:
+    0 24px 60px rgba(0, 0, 0, 0.22);
+}
+
+
+/* PREMIUM COVER */
+
+.insight-cover {
+  position: relative;
+
+  width: 100%;
+  height: 220px;
+  padding: 1.7rem;
+
+  display: flex;
+  align-items: flex-end;
+
+  overflow: hidden;
+
+  border-bottom: 1px solid rgba(201, 148, 59, 0.28);
+
+  background:
+    radial-gradient(
+      circle at 90% 5%,
+      rgba(228, 185, 108, 0.13),
+      transparent 40%
+    ),
+    linear-gradient(
+      145deg,
+      #102847,
+      #07182d 65%,
+      #03101e
+    );
+}
+
+.insight-cover::before {
+  content: "";
+
+  position: absolute;
+  top: -125px;
+  right: -115px;
+
+  width: 320px;
+  height: 320px;
+
+  border: 1px solid rgba(228, 185, 108, 0.1);
+  border-radius: 50%;
+
+  transition:
+    transform 0.5s ease,
+    border-color 0.5s ease;
+}
+
+.insight-cover::after {
+  content: "";
+
+  position: absolute;
+  right: 1.7rem;
+  bottom: 1.35rem;
+  left: 1.7rem;
+
+  height: 1px;
+
+  background:
+    linear-gradient(
+      90deg,
+      var(--gold),
+      rgba(201, 148, 59, 0.08)
+    );
+
+  opacity: 0.5;
+}
+
+.insight-card:hover .insight-cover::before {
+  transform: scale(1.08);
+  border-color: rgba(228, 185, 108, 0.2);
+}
+
+
+/* SUBTLE DIFFERENCES BETWEEN COVERS */
+
+.insight-cover-compass {
+  background:
+    radial-gradient(
+      circle at 88% 8%,
+      rgba(228, 185, 108, 0.16),
+      transparent 40%
+    ),
+    linear-gradient(
+      145deg,
+      #122c4d,
+      #07182d 62%,
+      #03101e
+    );
+}
+
+.insight-cover-library {
+  background:
+    radial-gradient(
+      circle at 88% 8%,
+      rgba(228, 185, 108, 0.12),
+      transparent 40%
+    ),
+    linear-gradient(
+      145deg,
+      #152b42,
+      #0a1c30 62%,
+      #04101d
+    );
+}
+
+.insight-cover-advisory {
+  background:
+    radial-gradient(
+      circle at 88% 8%,
+      rgba(228, 185, 108, 0.14),
+      transparent 40%
+    ),
+    linear-gradient(
+      145deg,
+      #112642,
+      #09182c 62%,
+      #04101e
+    );
+}
+
+.insight-cover-videos {
+  background:
+    radial-gradient(
+      circle at 88% 8%,
+      rgba(228, 185, 108, 0.1),
+      transparent 40%
+    ),
+    linear-gradient(
+      145deg,
+      #16283b,
+      #0a1828 62%,
+      #030e1a
+    );
+}
+
+
+/* COVER NUMBER */
+
+.insight-number {
+  position: absolute;
+  top: 1.35rem;
+  left: 1.55rem;
+
+  color: rgba(228, 185, 108, 0.15);
+  font-family: var(--serif);
+  font-size: 4.6rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+
+/* COVER CONTENT */
+
+.insight-cover-content {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  padding-bottom: 1.35rem;
+}
+
+.insight-cover-symbol {
+  display: block;
+  margin-bottom: 0.65rem;
+
+  color: var(--gold-soft);
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.insight-cover h4 {
+  margin: 0;
+
+  color: var(--ivory);
+  font-family: var(--sans);
+  font-size: 0.68rem;
+  font-weight: 600;
+  line-height: 1.4;
+
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+/*
+  This overrides the existing broad rule:
+  .insight-card p { ... }
+*/
+
+.insight-card .insight-cover p {
+  min-height: 0;
+  margin: 0.55rem 0 0;
+
+  color: var(--gold-soft);
+  font-family: var(--serif);
+  font-size: 1.7rem;
+  font-style: italic;
+  line-height: 1.05;
+}
+
+
+/* TEXT AREA UNDER THE COVER */
+
+.insight-card-content {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 1.6rem 1.4rem 1.5rem;
+}
+
+.insight-card-content h3 {
+  margin: 0 0 0.9rem;
+
+  color: var(--ivory);
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  font-weight: 600;
+  line-height: 1.4;
+
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.insight-card-content > p {
+  min-height: 96px;
+  margin: 0 0 1.4rem;
+
+  color: var(--muted);
+  font-size: 0.8rem;
+  line-height: 1.75;
+}
+
+.insight-card-content a {
+  width: fit-content;
+  margin: auto 0 0;
+
+  color: var(--gold);
+  font-size: 0.67rem;
+  font-weight: 500;
+  line-height: 1.5;
+
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.insight-card-content a:hover {
+  color: var(--gold-soft);
+  transform: translateX(4px);
+}
+
+.insight-card-content .coming-soon {
+  width: fit-content;
+  margin-top: auto;
+
+  color: rgba(228, 185, 108, 0.65);
+  font-size: 0.67rem;
+  font-weight: 500;
+  line-height: 1.5;
+
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+
+/* INSIGHTS RESPONSIVE */
+
+@media (max-width: 1100px) {
+  .insight-card-content > p {
+    min-height: 74px;
+  }
+}
+
+@media (max-width: 650px) {
+  .insight-cover {
+    height: 215px;
+  }
+
+  .insight-card-content > p {
+    min-height: 0;
+  }
+}
+
+/* ==================================================
+   FOOTER NEWSLETTER — CORRECT TOP POSITION
+================================================== */
+
+.site-footer {
+  padding-top: 4rem;
+}
+
+.footer-newsletter {
+  margin: 0 auto 4.5rem;
+}
+
+.footer-main {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 650px) {
+  .site-footer {
+    padding-top: 2.5rem;
+  }
+
+  .footer-newsletter {
+    margin: 0 auto 3.5rem;
+  }
+}
